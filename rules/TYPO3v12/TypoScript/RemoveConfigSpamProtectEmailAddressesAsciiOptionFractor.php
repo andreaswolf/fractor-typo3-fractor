@@ -23,7 +23,8 @@ final class RemoveConfigSpamProtectEmailAddressesAsciiOptionFractor extends Abst
         }
 
         if ($statement->object->absoluteName !== 'config.spamProtectEmailAddresses'
-            || $statement->value->value !== 'ascii') {
+            || $statement->value->value !== 'ascii'
+        ) {
             return null;
         }
 
